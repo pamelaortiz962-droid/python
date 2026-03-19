@@ -1,0 +1,13 @@
+numeros = []
+
+for i in range(5):
+    numero = int(input("Ingresa un número entero: "))
+    numeros.append(numero)
+
+minimo = numeros[0]
+
+for numero in numeros:
+    if numero < minimo:
+        minimo = numero
+
+print("El número mínimo del arreglo es:", minimo)
