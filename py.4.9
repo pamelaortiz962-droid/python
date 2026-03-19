@@ -1,0 +1,26 @@
+import random
+
+palabras = ["pantufla", "medialuna", "pan", "torta"]
+
+palabra = random.choice(palabras)
+
+progreso = ["_"] * len(palabra)
+
+progreso[0] = palabra[0]
+
+while "_" in progreso:
+    print("Palabra:", " ".join(progreso))
+    
+    letra = input("Ingresa una letra: ")
+    
+    acierto = False
+    
+    for i in range(len(palabra)):
+        if palabra[i] == letra:
+            progreso[i] = letra
+            acierto = True
+    
+    if acierto == False:
+        print("Letra incorrecta")
+
+print("¡Ganaste :0! La palabra era:", palabra)
