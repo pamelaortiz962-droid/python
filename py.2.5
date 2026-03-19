@@ -1,9 +1,13 @@
-numero = int(input("Ingresá un número: "))
+secreto = 7
 
-suma = 0
+numero = int(input("Adivina el número secreto: "))
 
-for i in range(1, numero + 1):
-    if i % 2 != 0:
-        suma = suma + i
+while numero != secreto:
+    if numero < secreto:
+        print("El número secreto es mayor")
+    else:
+        print("El número secreto es menor")
 
-print("La suma es:", suma)
+    numero = int(input("Intenta otra vez -.-: "))
+
+print("¡Correcto :D! Adivinaste el número")
