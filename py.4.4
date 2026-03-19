@@ -1,0 +1,13 @@
+numeros = []
+
+for i in range(5):
+    numero = int(input("Ingresá un número entero: "))
+    numeros.append(numero)
+
+contador = 0
+
+for numero in numeros:
+    if numero % 2 == 0:
+        contador = contador + 1
+
+print("La cantidad de números pares es:", contador)
